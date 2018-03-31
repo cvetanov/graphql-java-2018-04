@@ -1,0 +1,11 @@
+type POJO {
+    hello: String
+}
+
+type Query {
+    h: POJO
+}
+
+schema {
+    query: Query
+}
