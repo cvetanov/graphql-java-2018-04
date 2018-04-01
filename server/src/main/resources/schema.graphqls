@@ -1,9 +1,16 @@
 type POJO {
-    hello: String
+    field1: String
+    field2: String
+}
+
+type ComplexPOJO {
+    pojo: POJO
+    complexity: Int
 }
 
 type Query {
-    h: POJO
+    simple: POJO
+    complex: ComplexPOJO
 }
 
 schema {

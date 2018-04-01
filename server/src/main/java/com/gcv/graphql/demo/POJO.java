@@ -2,13 +2,22 @@ package com.gcv.graphql.demo;
 
 public class POJO {
 
-    private String hello;
+    private String field1;
+    private String field2;
 
-    public String getHello() {
-        return hello;
+    public String getField1() {
+        return field1;
     }
 
-    public void setHello(String hello) {
-        this.hello = hello;
+    public void setField1(String field1) {
+        this.field1 = field1;
+    }
+
+    public String getField2() {
+        return field2;
+    }
+
+    public void setField2(String field2) {
+        this.field2 = field2;
     }
 }
