@@ -59,6 +59,32 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>com.github.havardh</groupId>
+				<artifactId>javaflow-maven-plugin</artifactId>
+				<version>1.2.0</version>
+				<configuration>
+
+					<apis>
+						<api>
+							<packageName>com.gcv.graphql.types</packageName>
+							<suffixes>
+								<suffix>.java</suffix>
+							</suffixes>
+							<output>../../client/src/types.flow.js</output>
+							<types>
+								<!-- example for overriding types -->
+								<!-- tag name is canonical java type name -->
+								<!-- value is a valid flow (https://flow.org/) type -->
+								<java.math.BigDecimal>number</java.math.BigDecimal>
+							</types>
+							<verifications>
+								<verifyGetters>true</verifyGetters>
+							</verifications>
+						</api>
+					</apis>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
