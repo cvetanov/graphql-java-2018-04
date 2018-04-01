@@ -1,4 +1,4 @@
-package com.gcv.graphql.demo;
+package com.gcv.graphql.types;
 
 public class ComplexPOJO {
 

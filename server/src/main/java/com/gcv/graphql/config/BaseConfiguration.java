@@ -1,7 +1,7 @@
 package com.gcv.graphql.config;
 
 import com.coxautodev.graphql.tools.SchemaParser;
-import com.gcv.graphql.demo.Query;
+import com.gcv.graphql.resolvers.Query;
 import graphql.schema.GraphQLSchema;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

@@ -1,6 +1,8 @@
-package com.gcv.graphql.demo;
+package com.gcv.graphql.resolvers;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
+import com.gcv.graphql.types.ComplexPOJO;
+import com.gcv.graphql.types.POJO;
 import org.springframework.stereotype.Component;
 
 @Component
